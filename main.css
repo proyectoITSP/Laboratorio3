@@ -1,0 +1,296 @@
+
+/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA ENCABEZADO AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+.Navegacion { 
+    display:grid;
+    grid-template-columns:20% 20% 20% 4%;
+    grid-template-rows:auto;
+    background-color: #a35207;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 8em;
+    grid-column-gap: 6em;
+  }
+  
+  .Logo{
+    margin-left:3em;
+    width:9em;
+    height:8em;
+    background-image: url(Imagenes/Matematica.png);
+    background-repeat: round;
+  }
+  
+  .Boton{
+    background-color: #4f2412;
+    display:grid;
+    place-items:center;
+    grid-template-rows:100%;
+    grid-template-columns:100%;
+    color:#f5f5d7;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .Boton:hover{
+    background-color: #f5f5d7;
+    color:#4f2412;
+    opacity: 0,5;
+  }
+  
+  .texto{
+    text-align:center;
+    font-size: 35px;
+  }
+  
+  a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto de su contenedor */
+  }
+  
+  body{
+    background-color: #E9E9E9;
+  }
+  
+  .boton_calcular{
+    height: 40px;
+    border-radius: 30px;
+    background-color: #8ACBB5;
+    border: none;
+    width: 80px;
+  }
+  
+  .boton_calcular:hover{
+    background-color: #ffffff;
+    color:#8ACBB5;
+    cursor:pointer;
+  }
+  
+  /* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
+  
+  
+  
+
+
+  /* PARTE LAS CAJAS LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL */
+
+  .CentrarLaCaja{
+/* Tamaño y Posicion */
+height:22rem;
+margin-top: 15rem;
+margin-inline: 35rem;
+/* Tamaño y Posicion */
+/* Colores y estilo*/
+background-color: #f5f5d7;
+border:#4f2412 5px solid; 
+border-radius: 20px;
+/* Colores y estilo */
+/* Grid */
+display:grid;
+grid-template-columns: auto;
+grid-template-rows: 25% 45% 30%;
+/* Grid */
+  }
+ 
+
+
+
+
+.Titulo{
+/* Alinear Titulo al medio */
+display:grid;
+place-items:center;
+text-justify:center;
+/* Alinear Titulo al medio */
+/* Estilo */
+border-top-left-radius:13px;
+border-top-right-radius:13px ;
+background-color: #a35207;
+border-bottom:#4f2412 5px solid; 
+/* Estilo Letra */
+color:#fcffff;
+-webkit-text-stroke: 3px #4f2412;
+font-size: 55px;
+font-weight: 600;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+/* Estilo Letra */
+/* Estilo */
+}
+
+
+
+.Input{
+  /* Tamaño */
+  margin-inline: 5rem;
+  margin-top: 3rem ;
+  margin-bottom: 3rem ;
+  /* Tamaño */
+   /* Estilo */
+    outline:none;
+    border:#4f2412 5px solid;
+    background-color: #a35207;
+    color: #fcffff;
+    border-radius:3rem;
+    text-align:center;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+   /* Estilo */
+}
+.Input::placeholder{
+  color: #fcffff
+}
+
+
+.BotonConvertir{
+ /* Tamaño */
+ margin-inline: 5rem;
+ margin-top: 0.5rem ;
+ margin-bottom: 2.5rem ;
+ /* Tamaño */
+
+ /* Estilo */
+ outline:none;
+ border:none;
+ background-color: #4f2412;
+ color: #fcffff;
+ border-radius:3rem;
+ text-align:center;
+ font-weight: 600;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ cursor:pointer;
+  /* Estilo */
+}
+.BotonConvertir:hover{
+  background-color: #a35207;
+  color: #fcffff;
+}
+
+  /* LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL */
+   
+
+  /* PARTE RESULTADO LAS CAJAS NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */
+
+
+  .CentrarLaCaja2{
+    /* Tamaño y Posicion */
+    height:22rem;
+    margin-top: 15rem;
+    margin-inline: 35rem;
+    /* Tamaño y Posicion */
+    /* Colores y estilo*/
+    background-color: #f5f5d7;
+    border:#4f2412 5px solid; 
+    border-radius: 20px;
+    /* Colores y estilo */
+    /* Grid */
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 75%;
+    /* Grid */
+      }
+     
+    
+
+
+
+      .Resultados{
+        /* Tamaño, posicion y grid*/
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 2.5rem;
+         /* Tamaño y posicion y grid */
+      }
+
+
+
+
+      /* Celdas de la tabla Resultados */
+      .Valores1{
+      /* Grid para centrar texto */
+      display:grid;
+      grid-template-columns:100%;
+      grid-template-rows:100%;
+      padding: 8px;
+      /* Grid para centrar texto */
+      /* Estilo */
+      background-color: #a35207;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      /* Estilo */
+      }
+      
+      .Valores2{
+       /* Grid para centrar texto */
+       display:grid;
+       grid-template-columns:100%;
+       grid-template-rows:100%;
+       padding: 8px;
+       /* Grid para centrar texto */
+      /* Estilo */
+      background-color: #4f2412;
+      /* Estilo */
+      }
+
+      .Valores3{
+       /* Grid para centrar texto */
+       display:grid;
+       grid-template-columns:100%;
+       grid-template-rows:100%;
+       padding: 8px;
+       /* Grid para centrar texto */
+      /* Estilo */
+      background-color: #a35207;
+      /* Estilo */
+      }
+
+      .Valores4{
+       /* Grid para centrar texto */
+       display:grid;
+       grid-template-columns:100%;
+       grid-template-rows:100%;
+       padding: 8px;
+       /* Grid para centrar texto */
+      /* Estilo */
+      background-color: #4f2412;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      /* Estilo */
+      }
+      /* Celdas de la tabla Resultados */
+      /* Dentro de las celdas */
+      .Numeros{
+        /* Forma Color y Posicionamiento */
+        margin-inline:2rem;
+        border-radius:1rem;
+        border:#f5f5d7 solid 4px;
+        background-color: #fcffff;
+        /* Forma Color y Posicionamiento */
+        /* Estilo Letras */
+        color:#a35207 ;
+        text-align:center;
+        font-weight: 600;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        /* Estilo Letras */
+        
+      }
+      .Numeros1{
+        /* Forma Color y Posicionamiento */
+        margin-inline:2rem;
+        border-radius:1rem;
+        border:#f5f5d7 solid 4px;
+        background-color: #fcffff;
+        /* Forma Color y Posicionamiento */
+         /* Estilo Letras */
+         color:#4f2412  ;
+         text-align:center;
+         font-weight: 600;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         /* Estilo Letras */
+        
+      }
+      /* Dentro de las celdas */
+
+
+    
+
+  /* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN */

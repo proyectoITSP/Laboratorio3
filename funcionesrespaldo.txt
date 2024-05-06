@@ -1,0 +1,41 @@
+if($select === "Hexadecimal"){
+    if(preg_match('/^0[xX][0-9A-Fa-f]+$/', $numero)){
+      echo "El número es hexadecimal";
+    } else {
+      echo "El número no es hexadecimal";
+    }
+  }
+}
+
+
+
+try {
+            $resultado = base_convert($numero, 10, 10);
+            return $resultado;
+        } catch (Exception $e) {
+            return "No es Decimal";
+        }
+
+
+        try {
+            $resultado = base_convert($numero, 8, 10);
+            return $resultado;
+        } catch (Exception $e) {
+            return "No es Octal";
+        }
+
+
+         try {
+            $resultado = base_convert($numero, 2, 10);
+            return $resultado;
+        } catch (Exception $e) {
+            return "No es Binario";
+        }
+
+
+        try {
+            $resultado = base_convert($numero, 16, 10);
+            return $resultado;
+        } catch (Exception $e) {
+            return "No es hexadecimal";
+        }
